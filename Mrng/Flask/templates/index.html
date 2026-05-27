@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Student Result System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Result Form</h1>
+
+    <form action="/result" method="POST">
+
+        <input type="text"
+               name="roll"
+               placeholder="Enter Roll Number"
+               required>
+
+        <input type="password"
+               name="password"
+               placeholder="Enter Password"
+               required>
+
+        <input type="number"
+               name="internal"
+               placeholder="Internal Marks"
+               required>
+
+        <input type="number"
+               name="external"
+               placeholder="External Marks"
+               required>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
